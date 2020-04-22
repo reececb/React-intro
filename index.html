@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Hello World</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="application-root"></div>
+
+<script
+  src="https://unpkg.com/react@16/umd/react.development.js">
+</script>
+<script
+  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+</script>
+<script
+  src="https://unpkg.com/babel-standalone@6/babel.min.js">
+</script>
+<script type="text/babel">
+function App(props) {
+  return (
+    <main> 
+    <header>
+     <h1>{props.name}</h1>
+      <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Sally Student"/>
+     <p class="email-Phone"><a href="mailto:sallystudent@thinkfulengflex.com">sallystudent@thinkfulengflex.com</a> Phone: 555-716-0485</p>
+    </header>
+    <section>   
+     <h2>Education</h2>
+      <ul>
+       <li>Bachelors Degree in Computer Science from Texas A&M University</li>
+      </ul>
+    </section>
+    <section>  
+     <h2>Employment History</h2>
+      <ul>
+        <li>04/2010 - 09/2015</li>
+      </ul>    
+        <p>Verizon: Software Development Engineer</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+        ut labore et dolore magna aliqua. Euismod quis viverra nibh cras pulvinar mattis nunc sed blandit. 
+        Orci sagittis eu volutpat odio facilisis mauris sit. Nibh mauris cursus mattis molestie. Eu consequat ac felis 
+        donec et odio pellentesque diam volutpat. Vitae ultricies leo integer malesuada nunc vel risus. Enim tortor at auctor urna nunc. 
+        Nulla facilisi nullam vehicula ipsum.</p>    
+      <ul>  
+        <li>10/2015 - 11/2019</li>
+      </ul>    
+        <p>Lockheed Martin: Software Engineer Associate</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+        labore et dolore magna aliqua. Suspendisse sed nisi lacus sed viverra tellus. Justo donec enim diam 
+        vulputate ut pharetra sit amet. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Etiam dignissim diam 
+        quis enim lobortis scelerisque fermentum dui.</p>
+    </section>    
+   </main>    
+  );
+}
+
+ReactDOM.render(<App
+ name = {'Sally Student'}
+ />, document.querySelector('#application-root'));
+</script>
+
+</body>
+</html>
